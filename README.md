@@ -154,5 +154,5 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-**Saad Ullah**
+ Made by **Saad Ullah  ❤️**
 GitHub: [@saadullah990123](https://github.com/saadullah990123)
