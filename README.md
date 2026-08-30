@@ -44,10 +44,42 @@ A robust, terminal-based C++ application designed to manage student records, cou
 🛡️ Crash-Proof Input Validation: Robust handling of invalid data types, preventing infinite loops or unexpected crashes.
 
 🧬 OOP Concepts & Architecture
+
 Concept               Implementation in Code
+
 Abstraction            Pure virtual function virtual void displayInfo() const = 0 inside the abstract Person class.
+
 Inheritance            Student class derives publicly from the base Person class (class Student : public Person).
+
 Polymorphism           Runtime method overriding of displayInfo() across derived types.
+
 Encapsulation           Private/protected members guarded with getters, setters, and explicit bounds checking.
+
 Composition              Course objects managed within a std::vector<Course> container inside Student.
+
 Templates                  Generic stream wrapper getValidInput<T>() for type-safe terminal data entry.
+
+
+
+🛡️ Exception Handling & Input Safety
+
+This application is built with defensive programming practices:
+
+Stream Clearing & Error Recovery: Custom template wrapper handles type mismatches (e.g., entering letters into numerical fields) without crashing the stream buffer.
+
+Domain Validations: Throws standard C++ exceptions (std::invalid_argument, std::out_of_range) for out-of-bounds inputs like negative ages or invalid mark values.
+
+Duplicate Prevention: Checks for existing student IDs before allocation.
+
+
+StudentGradeManager-Cpp/
+├── main.cpp         # Complete C++ source implementation
+├── docs/            # Screenshots and preview assets
+│   └── demo.png     # Terminal execution screenshot
+└── README.md        # Project documentation
+
+
+<img width="548" height="800" alt="image" src="https://github.com/user-attachments/assets/d8aa9822-5e6e-4dc0-837b-6f81d75b9e9e" />
+<img width="500" height="818" alt="image" src="https://github.com/user-attachments/assets/0fac7b46-2e85-4254-b42d-23346b9d803a" />
+
+
